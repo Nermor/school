@@ -1,0 +1,36 @@
+p{
+	text-align: center;
+}
+
+.A {
+	box-shadow: 5px 5px 10px black;
+	width: 80%;
+	height: 80px;
+	font-size: 20px;
+	margin: auto;
+	margin-top: 3%;
+	margin-bottom: 3%;	
+}
+
+.B{
+	box-shadow: 5px 5px 10px black;
+	width: 80%;
+	height: 220px;
+	font-size: 15px;
+	margin-left: 5%;
+	margin-bottom: 0%;
+}
+
+.C{
+	box-shadow: 5px 5px 10px black;
+	width: 80%;
+	height: 150px;
+	margin-left: 3%;
+}
+
+.D{
+	box-shadow: 5px 5px 10px black;
+	width: 80%;
+	height: 100px;
+	margin-left: 0%;
+}

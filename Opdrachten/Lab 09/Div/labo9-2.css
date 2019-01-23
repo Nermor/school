@@ -1,0 +1,39 @@
+div {
+  margin: 5px;
+  padding: 5px;
+  border: 1px dotted white;
+}
+
+.table {
+  display: table;
+  background: linear-gradient(to bottom, red, yellow);
+  border-color: black;
+  border-style: double;
+}
+
+.row {
+  display: table-cell;
+  border: none;
+}
+
+.cell {
+  border-color: black;
+  border-style: double;
+}
+
+.head{
+  display: table-header-group;
+  text-align: center;
+}
+
+h4{
+  margin-top: 0px;
+  margin-bottom: 0px;
+  margin-left: 25px;
+  position: relative;
+
+}
+
+.seccond{
+  margin-left: 7px;
+}
