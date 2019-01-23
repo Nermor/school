@@ -1,0 +1,44 @@
+
+.container{
+	position: relative;
+	top: 100px;
+}
+
+.row{
+	display: flex;
+	justify-content: center;
+}
+
+.row:nth-child(even) > *:nth-child(even){
+	background-color: rgba(47, 134, 249, 1);
+}
+
+.row:nth-child(odd) > *:nth-child(odd){
+	background-color: rgba(47, 134, 249, 1);
+}
+
+.row:nth-child(odd) > *:nth-child(even){
+	background-color: rgba(178, 72, 6, 1);
+}
+
+.row:nth-child(even) > *:nth-child(odd){
+	background-color: rgba(178, 72, 6, 1);
+}
+
+.cell{
+	width: 100px;
+	height: 100px;
+	border: 1px solid black;
+}
+
+.row:nth-child(2) >.cell:after{
+	content:'\265F';
+	font-size: 100px;	
+}
+
+.row:nth-child(7) >.cell:after{
+	content:'\265F';
+	color: white;
+	font-size: 100px;	
+}
+

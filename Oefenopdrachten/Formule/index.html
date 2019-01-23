@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Formule</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <form action="http://student4a8.ao-ica.nl/insert.php" method="post">
+        <fieldset>
+            <legend>Persoonlijke informatie</legend>
+
+    <div class="row">
+        <div class="block"><label for="naam">Naam:</label></div>
+        <div class="block"><input type="text" name="naam" id="naam" placeholder="geef je naam in"></div>
+    </div>
+
+    <div class="row">
+        <div class="block"><label for="email">Email:</label></div>
+        <div class="block"><input type="email" name="email" id="email" placeholder="geef je email in"></div>
+    </div>
+
+    <div class="row">
+        <div class="block"><label for="leeftijd">Leeftijd:</label></div>
+        <div class="block"><input type="number" name="leeftijd" id="leeftijd"></div>
+    </div>
+
+    <div class="row">
+        <div class="block"><label for="code">Code:</label></div>
+        <div class="block"><input type="text" name="code" id="code" pattern="[0-9]{3}" placeholder="de gevonde code hier (3 cijfers)"></div>
+    </div>
+
+    <div class="row">
+        <div class="block"><label for="nieuwsbrief">Nieuwsbrief:</label></div>
+        <div class="block"><input type="checkbox" name="nieuwsbrief" id="nieuwsbrief"></div>
+    </div>
+
+    <div class="row">
+    <div class="block"><label for="niveau">Ik vind webprogrammeren tot nu toe:</label></div>
+    <div class="block">
+        <select name="niveau" id="select">
+            <option value="0">Te makkelijk</option>
+            <option value="1">Goed te doen</option>
+            <option value="2">Best lastig, maar te doen</option>
+            <option value="3">Te moeilijk</option>
+        </select></div>
+    </div>
+
+        </fieldset>
+        <fieldset>
+            <legend>Versturen</legend>
+            <input type="submit" value="Submit" name="submit" id="submit">
+            <input type="reset" name="reset" id="reset" >
+        </fieldset>
+    </form>
+
+</body>
+
+</html>

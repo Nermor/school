@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<!-- saved from url=(0145)https://bb.rocmn.nl/bbcswebdav/pid-3178235-dt-content-rid-25717726_2/courses/ICTICA_1819_Web_programming_4a8a/Click%20events%20and%20styling.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <title>Click events and styling</title>
+
+    <style>
+        @keyframes roteer {
+            from {transform: rotate(0deg);}
+            to {transform: rotate(360deg);}
+        }
+
+        body {margin:0}
+
+        section {margin-left: 15px;}
+        .vierkant {
+            width: 200px;
+            height: 200px;
+            border: 1px solid black;
+            display: inline-block;
+            margin: 50px;
+            vertical-align:top;
+			text-align: center;
+            line-height: 200px;
+
+        }
+    </style>
+
+<script>
+   function reset() {
+	
+	
+   }
+
+   function achtergrondkleur(o) {
+       o.style.backgroundColor='red';
+   }
+
+   function border(o) {
+       o.style.border='2px solid black';
+   }
+
+   function none(o) {
+       o.style.display='none';
+   }
+
+   function klein(o) {
+       o.style.width='100px';
+       o.style.height='100px';
+   }
+
+   function afbeelding(o) {
+        o.style.background= 'url(https://www.rocmn.nl/themes/custom/rocmn/logo.svg?v=1538394935)';
+   }
+
+   function animatie(o) {
+        o.style.animation= 'roteer';
+   }
+
+</script>
+
+<style type="text/css"></style></head>
+<body>
+<main>
+    <section class="uitleg">
+        <h1>Opdracht uitleg</h1>
+        <p>In deze oefening gebruikt je 6 div elementen van 200 x 200 pixels. Deze DIV objecten hebben een zwarte solid border van 1 pixel en staan als display:inline-block.<br>Geef ieder vierkant via het <em>onclick</em> event (dus wanneer je op het element klikt) via DOM functies de volgende eigenschappen:</p>
+        <ul>
+            <li>vierkant 1: een rode achtergrondkleur</li>
+            <li>vierkant 2: een border van 2 pixels</li>
+            <li>vierkant 3: een rotatie van 45 graden</li>
+            <li>vierkant 4: verklein het object met de helft</li>
+            <li>vierkant 5: maak onzichtbaar</li>
+            <li>vierkant 6: start de animatie 'roteer' op dit object</li>
+            <li>vierkant 7: stel een achtergrond afbeelding (no-repeat center) in op: https://www.rocmn.nl/themes/custom/rocmn/logo.svg?v=1538394935</li>
+        </ul>
+
+        <p>Programmeer de reset-knop zodat je alle vierkanten weer terugzet naar hun standaard waarden.</p>
+        <p><span style="font-weight: bold;">Tip:</span>Gebruik voor deze laatste opdracht de eigen functie "reset" welke je aanroept via het <em>onclick</em> event van de knop...</p>
+    </section>
+
+
+    <section class="oefening">
+        <button>reset alles</button>
+        <hr>
+        <div class="container">
+            <div onclick="achtergrondkleur(this)" id="item1" class="vierkant">rood</div>
+            <div onclick="border(this)" id="item2" class="vierkant">border 2px</div>
+            <div id="item3" class="vierkant">roteer 45 graden</div>
+            <div onclick="klein(this)" id="item4" class="vierkant">verklein met 0.5</div>
+            <div onclick="none(this)" id="item5" class="vierkant">maak onzichtbaar</div>
+            <div onclick="animatie(this)" id="item6" class="vierkant">start animate</div>
+            <div onclick="afbeelding(this)" id="item7" class="vierkant">afbeelding hier</div>
+        </div>
+
+
+
+    </section>
+</main>
+
+</body></html>

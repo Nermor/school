@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Java opdracht</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div>
+    Voer je naam in: 
+    <input id="name" type="text" 
+        onblur="document.getElementById('resultaat').innerText = 
+        document.getElementById('name').value;" 
+        name="name" placeholder="vul je naam hier in">
+    </div>
+
+    <h3>Je naam is:<span id="resultaat"></span></h3>
+
+    <div>
+        <button onclick="document.getElementById('resultaat').innerText='';">wissen</button>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,39 @@
+body{
+	border: 1px solid black;
+	width: 40%;
+	font-size: 80px;
+}
+.A{
+	text-shadow: 5px 5px 10px red;
+	box-shadow: 5px 5px 10px green;
+	padding-left: 25px;
+	margin-top: 10px;
+	margin-left: 10px;
+	border: 1px solid;
+	width: 150px;
+	height: 150px;
+	background-color: green;
+}
+.B{
+	text-shadow: -5px -5px 10px green;
+	box-shadow: -5px -5px 10px black;
+	margin-top: 20px;
+	margin-left: 70px;
+	margin-bottom: 20px;
+	border: 2px solid;
+	width: 150px;
+	height: 150px;
+	background-color: red;
+}
+.C{
+	text-shadow: 0px 5px 10px white;
+	box-shadow: 0px 5px 10px blue;
+	padding-right: 25px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 30px;
+	border: 3px dashed;
+	width: 150px;
+	height: 150px;
+	background-color: blue;
+}

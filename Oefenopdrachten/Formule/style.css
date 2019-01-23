@@ -1,0 +1,43 @@
+.rov div{
+	display: inline-block;
+}
+
+.block{
+	width: 100px;
+}
+
+body{
+	height: 100%;
+	width: 100%;
+	margin: auto;
+}
+
+.block:nth-child(2n){
+	position: relative;
+	bottom: 20px;
+	left: 150px;
+}
+
+form{
+	margin: auto;
+	margin-top: 10px;
+	width: 550px;
+	background-color: rgba(251, 238, 238, 1);
+}
+
+#naam{
+	width: 350px;
+}
+
+#code{
+	width: 350px;
+}
+
+#leeftijd{
+	width: 35px;
+}
+
+#select{
+	position: relative;
+	bottom: 15px;
+}
